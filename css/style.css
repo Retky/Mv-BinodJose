@@ -1,0 +1,14 @@
+#header {
+  background: gray;
+  height: 200px;
+  position: fixed;
+  width: 100%;
+}
+#nav-bar{
+  background: gray;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50px;
+}
