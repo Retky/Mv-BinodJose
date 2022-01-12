@@ -4,19 +4,20 @@
   box-sizing: border-box;
 }
 body{
-  position: fixed;
+
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5;
+  top: 0;
 
 }
 #header {
+  position: sticky;
   background: rgb(0, 0, 0);
   height: 100px;
-  position:relative;
   top: 0;
   justify-content: space-between;
   width: 100%;
@@ -28,7 +29,6 @@ img{
 
 }
 #nav-bar{
-  position: relative;
   top: 0;
   margin: 20px 50px 0 0;
   display: flex;
@@ -42,6 +42,33 @@ img{
   font-size: 20px;
   padding: 10px;
 }
+#form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+
+}
+#form #email{
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 0 10px;
+  outline: 0;
+}
+#form #submit{
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 0 10px;
+  cursor: pointer;
+}
 #nav-bar a:hover{
   text-decoration: underline;
 }
@@ -49,6 +76,7 @@ img{
 #video{
   width: 85vw;
   height: 500px;
+  margin-top: 100px;
 }
 
 .pricing{
@@ -56,6 +84,7 @@ img{
   display: flex;
   justify-content: space-around;
   text-align: center;
+  border: 10px solid #000000;
 }
 .pricing div{
   margin: 20px ;
@@ -68,13 +97,31 @@ img{
   font-size: 25px;
   font-weight: bold;
 }
+@media screen and (max-width:1080px){
+  #video{
+    width: 90vw;
+    height: 350px;
+  }
+}
+  
+
 
 @media screen and (max-width:600px){
 .pricing{
   flex-direction: column;
+  align-items: center;
 }
 #video{
   width: 100vw;
   height: 300px;
 }
+}
+@media screen and (max-width:500px){
+  #nav-bar a{
+    font-size: 16px;
+  }
+  img{
+    width: 70px;
+    margin: 10px 0 0 20px;
+  }
 }
