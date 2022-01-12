@@ -47,10 +47,34 @@ img{
 }
 
 #video{
-  width: 800px;
+  width: 85vw;
   height: 500px;
 }
 
-@media screen and (max-width:500px){
- 
+.pricing{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.pricing div{
+  margin: 20px ;
+  border: solid;
+  height: 200px;
+  width: 250px;
+}
+.pricing .title{
+  background: #D0D0D0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width:600px){
+.pricing{
+  flex-direction: column;
+}
+#video{
+  width: 100vw;
+  height: 300px;
+}
 }
