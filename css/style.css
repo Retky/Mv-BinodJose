@@ -42,6 +42,10 @@ img{
   font-size: 20px;
   padding: 10px;
 }
+#form-marg{
+  border: solid;
+  height: 200px;
+}
 #form{
   display: flex;
   flex-direction: column;
@@ -106,7 +110,7 @@ img{
     height: 350px;
   }
 }
-  
+
 
 
 @media screen and (max-width:600px){
